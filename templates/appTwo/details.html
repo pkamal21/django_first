@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Details | Users</title>
+</head>
+<body>
+    <a href="{% url 'appTwo:users'%}"/>Fill the form</a>
+
+	<div class="container">
+    {% for user in users %}
+    <ul>
+    	<li>{{user.name}}</li>
+    	<li>{{user.email}}</li>
+    	<li>{{user.dob}}</li>
+	</ul>
+    {% endfor %}
+</div>
+</body>
+</html>
